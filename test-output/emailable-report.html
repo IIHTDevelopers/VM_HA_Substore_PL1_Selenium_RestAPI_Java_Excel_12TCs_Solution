@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">161,724</td><td>sanity</td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.substore_testcase</td><td><a href="#m0">verifyModuleSignoutHoverText</a></td><td rowspan="1">1743166255119</td><td rowspan="1">36828</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">testcases.substore_testcase</td><td><a href="#m1">countAvailableSubstores</a></td><td rowspan="1">1743166248629</td><td rowspan="1">6282</td></tr><tr class="passedeven"><td><a href="#m2">takingScreenshotOfCurrentPage</a></td><td rowspan="1">1743166347454</td><td rowspan="1">2163</td></tr><tr class="passedeven"><td><a href="#m3">verifyAllSubstoreModulesAreDisplayedInSublist</a></td><td rowspan="1">1743166305282</td><td rowspan="1">12675</td></tr><tr class="passedeven"><td><a href="#m4">verifyDeletePost</a></td><td rowspan="1">1743166366816</td><td rowspan="1">716</td></tr><tr class="passedeven"><td><a href="#m5">verifyGetCommentsForPost</a></td><td rowspan="1">1743166367747</td><td rowspan="1">323</td></tr><tr class="passedeven"><td><a href="#m6">verifyGetPostById</a></td><td rowspan="1">1743166363589</td><td rowspan="1">1762</td></tr><tr class="passedeven"><td><a href="#m7">verifyInventoryRequisitionSection</a></td><td rowspan="1">1743166349818</td><td rowspan="1">13557</td></tr><tr class="passedeven"><td><a href="#m8">verifyNavigationBetweenSubmodules</a></td><td rowspan="1">1743166318259</td><td rowspan="1">28898</td></tr><tr class="passedeven"><td><a href="#m9">verifySubstoreCounterSubModule</a></td><td rowspan="1">1743166221909</td><td rowspan="1">25467</td></tr><tr class="passedeven"><td><a href="#m10">verifySubstoreSubModule</a></td><td rowspan="1">1743166292280</td><td rowspan="1">12771</td></tr><tr class="passedeven"><td><a href="#m11">verifyUpdatePost</a></td><td rowspan="1">1743166365548</td><td rowspan="1">1070</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">testcases.substore_testcase#verifyModuleSignoutHoverText</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: Failed to verify the hover text on the &apos;Sign Out&apos; module: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(text(),&apos;To change, you can always click here.&apos;)]&quot;}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d879644156bd6d43d43afc89aa18f9a8, findElement {using=xpath, value=//h6[contains(text(),&apos;To change, you can always click here.&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50090/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d879644156bd6d43d43afc89aa18f9a8
+	at pages.substore_page.verifyModuleSignoutHoverText(substore_page.java:225)
+	at testcases.substore_testcase.verifyModuleSignoutHoverText(substore_testcase.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(text(),&apos;To change, you can always click here.&apos;)]&quot;}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d879644156bd6d43d43afc89aa18f9a8, findElement {using=xpath, value=//h6[contains(text(),&apos;To change, you can always click here.&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50090/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d879644156bd6d43d43afc89aa18f9a8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at coreUtilities.utils.CommonEvents.findElement(CommonEvents.java:142)
+	at pages.substore_page.verifyModuleSignoutHoverText(substore_page.java:213)
+	... 14 more
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.substore_testcase#countAvailableSubstores</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.substore_testcase#takingScreenshotOfCurrentPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.substore_testcase#verifyAllSubstoreModulesAreDisplayedInSublist</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.substore_testcase#verifyDeletePost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.substore_testcase#verifyGetCommentsForPost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.substore_testcase#verifyGetPostById</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.substore_testcase#verifyInventoryRequisitionSection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.substore_testcase#verifyNavigationBetweenSubmodules</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.substore_testcase#verifySubstoreCounterSubModule</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testcases.substore_testcase#verifySubstoreSubModule</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testcases.substore_testcase#verifyUpdatePost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

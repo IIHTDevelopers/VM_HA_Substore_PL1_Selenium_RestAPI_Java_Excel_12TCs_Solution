@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="verifyModuleSignoutHoverText">verifyModuleSignoutHoverText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="countAvailableSubstores">countAvailableSubstores</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="takingScreenshotOfCurrentPage">takingScreenshotOfCurrentPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="verifyAllSubstoreModulesAreDisplayedInSublist">verifyAllSubstoreModulesAreDisplayedInSublist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="verifyDeletePost">verifyDeletePost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="verifyGetCommentsForPost">verifyGetCommentsForPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="verifyGetPostById">verifyGetPostById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="verifyInventoryRequisitionSection">verifyInventoryRequisitionSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="verifyNavigationBetweenSubmodules">verifyNavigationBetweenSubmodules</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="verifySubstoreCounterSubModule">verifySubstoreCounterSubModule</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="verifySubstoreSubModule">verifySubstoreSubModule</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.substore_testcase" class="method navigator-link" hash-for-method="verifyUpdatePost">verifyUpdatePost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.substore_testcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyModuleSignoutHoverText">
+                  </a> <!-- verifyModuleSignoutHoverText -->
+                  <span class="method-name">verifyModuleSignoutHoverText</span>
+                  <div class="stack-trace">java.lang.Exception: Failed to verify the hover text on the &apos;Sign Out&apos; module: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(text(),&apos;To change, you can always click here.&apos;)]&quot;}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d879644156bd6d43d43afc89aa18f9a8, findElement {using=xpath, value=//h6[contains(text(),&apos;To change, you can always click here.&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50090/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d879644156bd6d43d43afc89aa18f9a8
+	at pages.substore_page.verifyModuleSignoutHoverText(substore_page.java:225)
+	at testcases.substore_testcase.verifyModuleSignoutHoverText(substore_testcase.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(text(),&apos;To change, you can always click here.&apos;)]&quot;}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.3.2&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d879644156bd6d43d43afc89aa18f9a8, findElement {using=xpath, value=//h6[contains(text(),&apos;To change, you can always click here.&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50090/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d879644156bd6d43d43afc89aa18f9a8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at coreUtilities.utils.CommonEvents.findElement(CommonEvents.java:142)
+	at pages.substore_page.verifyModuleSignoutHoverText(substore_page.java:213)
+	... 14 more
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Precondition: User should be logged in and on the Verification section\n"
+	+ "1. Click on the Inventory Module
+	+ "2. Hover over on module signout button and get text3. Verify text To change, you can always click here.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.substore_testcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="countAvailableSubstores">
+                  </a> <!-- countAvailableSubstores -->
+                  <span class="method-name">countAvailableSubstores</span>
+                  <em>
+(1. Login in the healthapp application
+2. Click on the substore 
+3. "Select your Substore" pop up 4. Expected value that should be present in "Select your Substore" modal
+Expected sub-modals button:  Accounts,male ward SubStore,SubStore1,SubStore1)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="takingScreenshotOfCurrentPage">
+                  </a> <!-- takingScreenshotOfCurrentPage -->
+                  <span class="method-name">takingScreenshotOfCurrentPage</span>
+                  <em>
+(Under Substore module > INventory Section"
+Take the screenshot of the current page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllSubstoreModulesAreDisplayedInSublist">
+                  </a> <!-- verifyAllSubstoreModulesAreDisplayedInSublist -->
+                  <span class="method-name">verifyAllSubstoreModulesAreDisplayedInSublist</span>
+                  <em>
+(Pre condition: User should be logged in and it is on SubStore module
+1. Click on the SubStore Module drop-down arrow   
+2. Click on Inventory module. Expected Sub modules are : Stock, Inventory Requisition, Consumption, Reports, Patient Consumption,Return)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeletePost">
+                  </a> <!-- verifyDeletePost -->
+                  <span class="method-name">verifyDeletePost</span>
+                  <em>
+(Precondition: Access to JSONPlaceholder API
+1. Send DELETE request to delete an existing post by ID
+2. Verify the response status code is 200 or 204
+3. Ensure the post is deleted by verifying a GET request returns 404)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetCommentsForPost">
+                  </a> <!-- verifyGetCommentsForPost -->
+                  <span class="method-name">verifyGetCommentsForPost</span>
+                  <em>
+(Precondition: Access to JSONPlaceholder API
+1. Send GET request to retrieve comments for a post by postId
+2. Verify the response status code is 200
+3. Validate that the response contains comments data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetPostById">
+                  </a> <!-- verifyGetPostById -->
+                  <span class="method-name">verifyGetPostById</span>
+                  <em>
+(Precondition: Access to JSONPlaceholder API
+1. Send GET request to retrieve post by ID
+2. Verify the response status code is 200
+3. Validate the response body contains the expected post data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInventoryRequisitionSection">
+                  </a> <!-- verifyInventoryRequisitionSection -->
+                  <span class="method-name">verifyInventoryRequisitionSection</span>
+                  <em>
+(Pre condition: User should be logged in and it is on SubStore module
+1. Click on the SubStore module drop-down arrow 
+2. Click on Inventory sub-module
+3. Click on Inventory Requisition section)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigationBetweenSubmodules">
+                  </a> <!-- verifyNavigationBetweenSubmodules -->
+                  <span class="method-name">verifyNavigationBetweenSubmodules</span>
+                  <em>
+(Pre condition: User should be logged in 
+1. Click on the Substore Module drop-down arrow2. Verify navigation between sub-modules)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySubstoreCounterSubModule">
+                  </a> <!-- verifySubstoreCounterSubModule -->
+                  <span class="method-name">verifySubstoreCounterSubModule</span>
+                  <em>
+(Precondition: User should be logged in and on the healthapp section
+1. Login in the healthapp application
+2. Scroll down menu till Substore
+3. Click on the Substore4. SubStore module should be present)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySubstoreSubModule">
+                  </a> <!-- verifySubstoreSubModule -->
+                  <span class="method-name">verifySubstoreSubModule</span>
+                  <em>
+(Pre condition: User should be logged in and it is on SubStore module
+1. Login in the healthapp application
+2. Click on the Substore
+3. "Select your Substore" pop up 
+4. Click on "Account" sub-modal
+5. Click on the "Inventory" sub-module
+6. Click on" Pharmacy" sub-module
+7. All sub-modules should be displayed correctly.
+8. Expected Sub modules are : Pharmacy, Inventory)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUpdatePost">
+                  </a> <!-- verifyUpdatePost -->
+                  <span class="method-name">verifyUpdatePost</span>
+                  <em>
+(Precondition: Access to JSONPlaceholder API
+1. Send PUT request to update an existing post
+2. Verify the response status code is 200
+3. Validate the response body contains the updated post data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/abhisheksharma/Desktop/Selenium Templets/13_SUBSTORE/SubStore with RestAPI/VM_HA_Substore_PL1_SeleniumAndRestAPIWithJava_SolutionWithExcel_12TCs/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;sanity&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;sanity&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;coreUtilities.testlisteners.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;coreUtilities.testlisteners.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;dev&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.substore_testcase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">countAvailableSubstores</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">takingScreenshotOfCurrentPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAllSubstoreModulesAreDisplayedInSublist</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDeletePost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyGetCommentsForPost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyGetPostById</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyInventoryRequisitionSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyModuleSignoutHoverText</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNavigationBetweenSubmodules</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySubstoreCounterSubModule</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySubstoreSubModule</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUpdatePost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyModuleSignoutHoverText')
+data.setCell(0, 2, 'testcases.substore_testcase')
+data.setCell(0, 3, 36828);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyNavigationBetweenSubmodules')
+data.setCell(1, 2, 'testcases.substore_testcase')
+data.setCell(1, 3, 28898);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifySubstoreCounterSubModule')
+data.setCell(2, 2, 'testcases.substore_testcase')
+data.setCell(2, 3, 25467);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyInventoryRequisitionSection')
+data.setCell(3, 2, 'testcases.substore_testcase')
+data.setCell(3, 3, 13557);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifySubstoreSubModule')
+data.setCell(4, 2, 'testcases.substore_testcase')
+data.setCell(4, 3, 12771);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAllSubstoreModulesAreDisplayedInSublist')
+data.setCell(5, 2, 'testcases.substore_testcase')
+data.setCell(5, 3, 12675);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'countAvailableSubstores')
+data.setCell(6, 2, 'testcases.substore_testcase')
+data.setCell(6, 3, 6282);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'takingScreenshotOfCurrentPage')
+data.setCell(7, 2, 'testcases.substore_testcase')
+data.setCell(7, 3, 2163);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyGetPostById')
+data.setCell(8, 2, 'testcases.substore_testcase')
+data.setCell(8, 3, 1762);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyUpdatePost')
+data.setCell(9, 2, 'testcases.substore_testcase')
+data.setCell(9, 3, 1070);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyDeletePost')
+data.setCell(10, 2, 'testcases.substore_testcase')
+data.setCell(10, 3, 716);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyGetCommentsForPost')
+data.setCell(11, 2, 'testcases.substore_testcase')
+data.setCell(11, 3, 323);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.substore_testcase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initBrowser(chrome, dev)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifySubstoreCounterSubModule</span>
+                <span class="method-start">15024 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">countAvailableSubstores</span>
+                <span class="method-start">41744 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyModuleSignoutHoverText</span>
+                <span class="method-start">48234 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySubstoreSubModule</span>
+                <span class="method-start">85395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAllSubstoreModulesAreDisplayedInSublist</span>
+                <span class="method-start">98397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyNavigationBetweenSubmodules</span>
+                <span class="method-start">111374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">takingScreenshotOfCurrentPage</span>
+                <span class="method-start">140569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyInventoryRequisitionSection</span>
+                <span class="method-start">142933 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetPostById</span>
+                <span class="method-start">156704 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyUpdatePost</span>
+                <span class="method-start">158663 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDeletePost</span>
+                <span class="method-start">159931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyGetCommentsForPost</span>
+                <span class="method-start">160862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">161457 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

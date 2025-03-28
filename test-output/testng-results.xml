@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-28T18:20:06 IST" name="Suite" finished-at="2025-03-28T18:22:48 IST" duration-ms="161724">
+    <groups>
+      <group name="sanity">
+        <method signature="substore_testcase.verifySubstoreCounterSubModule()[pri:1, instance:testcases.substore_testcase@6f815e7f]" name="verifySubstoreCounterSubModule" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.countAvailableSubstores()[pri:2, instance:testcases.substore_testcase@6f815e7f]" name="countAvailableSubstores" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.verifyModuleSignoutHoverText()[pri:3, instance:testcases.substore_testcase@6f815e7f]" name="verifyModuleSignoutHoverText" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.verifySubstoreSubModule()[pri:4, instance:testcases.substore_testcase@6f815e7f]" name="verifySubstoreSubModule" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.verifyAllSubstoreModulesAreDisplayedInSublist()[pri:5, instance:testcases.substore_testcase@6f815e7f]" name="verifyAllSubstoreModulesAreDisplayedInSublist" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.verifyNavigationBetweenSubmodules()[pri:6, instance:testcases.substore_testcase@6f815e7f]" name="verifyNavigationBetweenSubmodules" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.takingScreenshotOfCurrentPage()[pri:7, instance:testcases.substore_testcase@6f815e7f]" name="takingScreenshotOfCurrentPage" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.verifyInventoryRequisitionSection()[pri:8, instance:testcases.substore_testcase@6f815e7f]" name="verifyInventoryRequisitionSection" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.verifyGetPostById()[pri:9, instance:testcases.substore_testcase@6f815e7f]" name="verifyGetPostById" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.verifyUpdatePost()[pri:10, instance:testcases.substore_testcase@6f815e7f]" name="verifyUpdatePost" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.verifyDeletePost()[pri:11, instance:testcases.substore_testcase@6f815e7f]" name="verifyDeletePost" class="testcases.substore_testcase"/>
+        <method signature="substore_testcase.verifyGetCommentsForPost()[pri:12, instance:testcases.substore_testcase@6f815e7f]" name="verifyGetCommentsForPost" class="testcases.substore_testcase"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2025-03-28T18:20:06 IST" name="Test" finished-at="2025-03-28T18:22:48 IST" duration-ms="161724">
+      <class name="testcases.substore_testcase">
+        <test-method is-config="true" signature="initBrowser(java.lang.String,java.lang.String)[pri:0, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:20:06 IST" name="initBrowser" finished-at="2025-03-28T18:20:21 IST" duration-ms="15005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method signature="verifySubstoreCounterSubModule()[pri:1, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:20:21 IST" name="verifySubstoreCounterSubModule" description="Precondition: User should be logged in and on the healthapp section
+1. Login in the healthapp application
+2. Scroll down menu till Substore
+3. Click on the Substore4. SubStore module should be present" finished-at="2025-03-28T18:20:47 IST" duration-ms="25467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubstoreCounterSubModule -->
+        <test-method signature="countAvailableSubstores()[pri:2, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:20:48 IST" name="countAvailableSubstores" description="1. Login in the healthapp application
+2. Click on the substore 
+3. &quot;Select your Substore&quot; pop up 4. Expected value that should be present in &quot;Select your Substore&quot; modal
+Expected sub-modals button:  Accounts,male ward SubStore,SubStore1,SubStore1" finished-at="2025-03-28T18:20:54 IST" duration-ms="6282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countAvailableSubstores -->
+        <test-method signature="verifyModuleSignoutHoverText()[pri:3, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:20:55 IST" name="verifyModuleSignoutHoverText" description="Precondition: User should be logged in and on the Verification section\n&quot;
+	+ &quot;1. Click on the Inventory Module
+	+ &quot;2. Hover over on module signout button and get text3. Verify text To change, you can always click here." finished-at="2025-03-28T18:21:31 IST" duration-ms="36828" status="FAIL">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Failed to verify the hover text on the 'Sign Out' module: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[contains(text(),'To change, you can always click here.')]"}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d879644156bd6d43d43afc89aa18f9a8, findElement {using=xpath, value=//h6[contains(text(),'To change, you can always click here.')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50090/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d879644156bd6d43d43afc89aa18f9a8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Failed to verify the hover text on the 'Sign Out' module: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[contains(text(),'To change, you can always click here.')]"}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d879644156bd6d43d43afc89aa18f9a8, findElement {using=xpath, value=//h6[contains(text(),'To change, you can always click here.')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50090/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d879644156bd6d43d43afc89aa18f9a8
+at pages.substore_page.verifyModuleSignoutHoverText(substore_page.java:225)
+at testcases.substore_testcase.verifyModuleSignoutHoverText(substore_testcase.java:108)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[contains(text(),'To change, you can always click here.')]"}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.2', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d879644156bd6d43d43afc89aa18f9a8, findElement {using=xpath, value=//h6[contains(text(),'To change, you can always click here.')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/5y/7c_nbpk94jg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50090/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d879644156bd6d43d43afc89aa18f9a8
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at coreUtilities.utils.CommonEvents.findElement(CommonEvents.java:142)
+at pages.substore_page.verifyModuleSignoutHoverText(substore_page.java:213)
+... 14 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyModuleSignoutHoverText -->
+        <test-method signature="verifySubstoreSubModule()[pri:4, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:21:32 IST" name="verifySubstoreSubModule" description="Pre condition: User should be logged in and it is on SubStore module
+1. Login in the healthapp application
+2. Click on the Substore
+3. &quot;Select your Substore&quot; pop up 
+4. Click on &quot;Account&quot; sub-modal
+5. Click on the &quot;Inventory&quot; sub-module
+6. Click on&quot; Pharmacy&quot; sub-module
+7. All sub-modules should be displayed correctly.
+8. Expected Sub modules are : Pharmacy, Inventory" finished-at="2025-03-28T18:21:45 IST" duration-ms="12771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubstoreSubModule -->
+        <test-method signature="verifyAllSubstoreModulesAreDisplayedInSublist()[pri:5, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:21:45 IST" name="verifyAllSubstoreModulesAreDisplayedInSublist" description="Pre condition: User should be logged in and it is on SubStore module
+1. Click on the SubStore Module drop-down arrow   
+2. Click on Inventory module. Expected Sub modules are : Stock, Inventory Requisition, Consumption, Reports, Patient Consumption,Return" finished-at="2025-03-28T18:21:57 IST" duration-ms="12675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllSubstoreModulesAreDisplayedInSublist -->
+        <test-method signature="verifyNavigationBetweenSubmodules()[pri:6, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:21:58 IST" name="verifyNavigationBetweenSubmodules" description="Pre condition: User should be logged in 
+1. Click on the Substore Module drop-down arrow2. Verify navigation between sub-modules" finished-at="2025-03-28T18:22:27 IST" duration-ms="28898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationBetweenSubmodules -->
+        <test-method signature="takingScreenshotOfCurrentPage()[pri:7, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:22:27 IST" name="takingScreenshotOfCurrentPage" description="Under Substore module &gt; INventory Section&quot;
+Take the screenshot of the current page" finished-at="2025-03-28T18:22:29 IST" duration-ms="2163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takingScreenshotOfCurrentPage -->
+        <test-method signature="verifyInventoryRequisitionSection()[pri:8, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:22:29 IST" name="verifyInventoryRequisitionSection" description="Pre condition: User should be logged in and it is on SubStore module
+1. Click on the SubStore module drop-down arrow 
+2. Click on Inventory sub-module
+3. Click on Inventory Requisition section" finished-at="2025-03-28T18:22:43 IST" duration-ms="13557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInventoryRequisitionSection -->
+        <test-method signature="verifyGetPostById()[pri:9, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:22:43 IST" name="verifyGetPostById" description="Precondition: Access to JSONPlaceholder API
+1. Send GET request to retrieve post by ID
+2. Verify the response status code is 200
+3. Validate the response body contains the expected post data" finished-at="2025-03-28T18:22:45 IST" duration-ms="1762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetPostById -->
+        <test-method signature="verifyUpdatePost()[pri:10, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:22:45 IST" name="verifyUpdatePost" description="Precondition: Access to JSONPlaceholder API
+1. Send PUT request to update an existing post
+2. Verify the response status code is 200
+3. Validate the response body contains the updated post data" finished-at="2025-03-28T18:22:46 IST" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdatePost -->
+        <test-method signature="verifyDeletePost()[pri:11, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:22:46 IST" name="verifyDeletePost" description="Precondition: Access to JSONPlaceholder API
+1. Send DELETE request to delete an existing post by ID
+2. Verify the response status code is 200 or 204
+3. Ensure the post is deleted by verifying a GET request returns 404" finished-at="2025-03-28T18:22:47 IST" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeletePost -->
+        <test-method signature="verifyGetCommentsForPost()[pri:12, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:22:47 IST" name="verifyGetCommentsForPost" description="Precondition: Access to JSONPlaceholder API
+1. Send GET request to retrieve comments for a post by postId
+2. Verify the response status code is 200
+3. Validate that the response contains comments data" finished-at="2025-03-28T18:22:48 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetCommentsForPost -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.substore_testcase@6f815e7f]" started-at="2025-03-28T18:22:48 IST" name="tearDown" finished-at="2025-03-28T18:22:48 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.substore_testcase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
